@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.popup-container {
+  max-width: 250px;
+}
+
+.popup-header {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.popup-content {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.popup-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* #root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #f3e4d7;
+  } */
+
+/* height of the container */
+.leaflet-container {
+  height: 70vh;
+  width: 60vw;
+  border-radius: 2rem;
+
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+/* .cluster-icon {
+    background-color: #333;
+    height: 2em;
+    width: 2em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0px 5px #fff;
+  }
+   */

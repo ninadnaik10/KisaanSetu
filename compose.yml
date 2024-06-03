@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  frontend:
+      container_name: kisaansetu_frontend
+      image: kisaansetu_frontend
+      build:
+        context: ./Frontend
+        dockerfile: frontend.dockerfile
+      ports:
+        - 5713:5713
+      environment:
+        VITE_API: http://localhost:8080/
+        VITE_CLOUDINARY_CLOUD_NAME: kdjfowejnfewfholksds
+      restart: always
+      depends_on:
+        - backend
+  backend:
+    container_name: kisaansetu_backend
+    image: kisaansetu_backend
+    build:
+      context: ./Backend
+      dockerfile: backend.dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      MONGO_DB_URL: mongodb+srv://ninadtechnical:aS5PA1hsL5YvVBjI@cluster0.4vmdi8v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

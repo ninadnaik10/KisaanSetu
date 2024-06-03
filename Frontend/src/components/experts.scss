@@ -1,0 +1,40 @@
+.expertcontainer{
+    display: flex;
+    margin: 30px;
+    margin-inline: 50px;
+    gap: 20px;
+}
+.expert {
+    padding-block: 20px;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25%;
+    height: 300px;
+    // border: 1px solid;
+    // color: #B91C1C;
+    margin: 20px;
+    flex-direction: column;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 5px 5px 15px gray;
+    h2{
+        font-size: 1.2rem;
+        margin-block: 10px;
+    }
+    button{
+        margin-block: 20px;
+    }
+}
+
+.meetbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px solid #696969;
+}
+
+.profileimg{
+    width: 100px;
+}

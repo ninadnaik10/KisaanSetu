@@ -1,0 +1,54 @@
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+
+.accordion {
+  width: 50%;
+  margin: auto;
+  i{
+    transition: all 2s ease-in-out;
+    font-size: 30px;
+  }
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  align-items: center;
+
+  .title {
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    justify-content: space-around ;
+  }
+
+  .content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    text-align: justify;
+    p {
+      margin: 0;
+    }
+  }
+
+  &.open {
+    .title {
+      // background-color: $secondary-color;
+    }
+
+    .content {
+      padding: 10px;
+      max-height: 9999px;
+      transition: max-height 1s ease-in-out;
+    }
+  }
+}
+.spacer{
+  height: 4000px;
+  background-color: burlywood;
+}

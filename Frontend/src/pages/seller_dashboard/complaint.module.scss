@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+$font: "Lato", sans-serif;
+$borderRadius: 4px;
+
+.container {
+  height: 100vh;
+  margin: 0;
+  padding-top: 40px;
+  background-image: url("./farmer.jpg");
+  background-size: cover;
+  * {
+    font-family: $font;
+  }
+}
+
+.button {
+  width: 100px;
+  padding: 10px 15px;
+  background-color: rgb(179, 0, 0);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.card {
+  background-color: #fff;
+  border: solid rgb(231, 231, 231) 2px;
+  box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  margin-top: 50px;
+  width: 400px;
+  margin-inline: auto;
+  padding-block-start: 20px;
+  padding-inline: 40px;
+  div {
+    display: flex;
+    flex-grow: 1;  
+    justify-content: space-between;
+  }
+}
+
+.row {
+  flex-direction: row;
+  margin-block: 20px;
+  input {
+    border: solid rgb(206, 206, 206) 0.5px;
+    border-radius: $borderRadius;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+  }
+  input:focus {
+    outline: none;
+  }
+  textarea{
+    border: solid rgb(206, 206, 206) 0.5px;
+    border-radius: $borderRadius;
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  align-items: center;
+  gap: 15px;
+}
+
+.hide {
+  i{
+    font-size: 1.5vw;
+    color: #777;
+  }
+}
+
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+
+  input {
+    padding: 0.8em;
+    width: 100%;
+
+    &:valid + label {
+      transform: translateY(-50%) scale(0.8);
+      margin: 0em;
+      padding: 0.2em;
+      background-color: #fff;
+      opacity: 100;
+    }
+  }
+
+  label {
+    opacity: 0;
+    font-size: 100%;
+    transform: scale(0.9);
+    position: absolute;
+    left: 0;
+    padding: 0.5em;
+    margin-left: 0.2em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: gray;
+    transform: translateY(-50%) scale(0.9);
+  }
+}
