@@ -14,7 +14,7 @@ export default function Detect() {
   const [showLoading, setShowLoading] = useState(false);
   const [showLoading2, setShowLoading2] = useState(false);
   const [geminiDisc, setGeminiDisc] = useState(null);
-  const genAI = new GoogleGenerativeAI("AIzaSyCVhKLvwOpQa6S-zUP3_3lMB-z_7ltpgQ8");
+  const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API);
 
 
   const [openAcc, setOpenAcc] = useState(false)

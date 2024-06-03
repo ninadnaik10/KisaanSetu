@@ -24,4 +24,4 @@ services:
     ports:
       - 8080:8080
     environment:
-      MONGO_DB_URL: mongodb+srv://ninadtechnical:aS5PA1hsL5YvVBjI@cluster0.4vmdi8v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      MONGO_DB_URL: mongodb+srv://
