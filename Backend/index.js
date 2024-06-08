@@ -21,7 +21,8 @@ const PORT = 8080;
 const app = express();
 
 const corsOption = {
-
+  origin: "https://kisaansetu.netlify.app/",
+  optionsSuccessStatus: 200,
 }
 
 app.use(cors());
